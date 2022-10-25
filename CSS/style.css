@@ -1,0 +1,145 @@
+:root{
+    --primary:#172126;
+    --light:#ffffff;
+}
+
+body{
+    overflow: hidden;
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 300;
+    color: var(--primary);
+}
+
+a{
+    text-decoration: none;
+}
+
+.bg-primary{background-color: var(--primary) !important;}
+.bg-light{ background-color: var(--light) !important;}
+
+#sidebar-container{
+    min-height: 100vh;
+}
+
+#sidebar-container .maintext{
+    padding: .875rem 3rem;
+}
+
+#sidebar-container .logo{
+    padding: .875rem 3rem;
+}
+
+#sidebar-container .menu{
+    width: 18rem;
+}
+
+.btn-search{
+    right: 5px;
+}
+
+#content{
+    overflow-y: auto;
+    height: 100vh;
+    padding-bottom: 5rem;
+}
+
+.container{
+    max-width: 1600px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*Login Stuff */
+.login-form{
+    padding: 50px;
+}
+
+.login-form form{
+    background-color: #172126;
+    max-width: 500px;
+    margin: auto;
+    padding: 40px 60px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 0px 2px 10px rgb(131, 130, 130);
+}
+
+.login-form .form-name{
+    text-align: center;
+    font-size: 40px;
+    color: #ffffff;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 25px;
+    line-height: 80px;
+}
+
+.login-form .item  {
+    border-radius: 10px;
+    margin-bottom: 25px;
+    padding: 10px 20px;
+}
+
+.login-form .login-account{
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-weight: bold;
+    background-color: #78c2ad;
+    border: none;
+    margin-top: 20px;
+
+
+}
+
+.login-form .form-group a{
+    color: #78c2ad;
+}
+
+.form-group .btn{
+    display: block;
+    width: 230px;
+    padding: 18px 15px;
+    border: 0;
+    border-radius: 5px;
+    margin: 5px 4.5rem;
+}
+
+.form-group .btn-hover{
+    text-decoration: none;
+    opacity: 0.5;
+}
+
+
+.imagesize{
+    margin: 5px 6.5rem;
+    width: 150px;
+}
+
+.filtradoBS{
+    text-decoration: none;
+    display: block;
+    background-color: #172126;
+    width: 100px;
+}
+
+.centrado{
+    margin: auto;
+    width: 50%;
+    padding: 50px;
+}
+
+.close{
+    text-align: center;
+}
+
+canvas{
+
+    width:800px !important;
+    height:400px !important;
+  
+  }
+
+.hidden1{
+    display: none;
+}

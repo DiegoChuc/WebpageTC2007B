@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+     <!--Fonts-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;900&display=swap" rel="stylesheet">
+
+      <!--Icons-->
+      <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+      <!--CSS File-->
+      <link rel="stylesheet" href="CSS/style.css">
+
+  </head>
+  <body>
+    <!--Sidebar-->
+    <div class="d-flex">
+      <div class="bg-primary" id="sidebar-container">
+          <div class="maintext">
+              <h2 class="text-light font-weight-bold">Admin View</h2>
+          </div>
+          <div class="logo">
+              <a href="index.html" class="d-block text-light font-weight-bold">
+                <h3 class="text-light font-weight-bold"><i class="icon ion-md-apps me-2 lead"></i>Dashboard</h3>
+              </a>
+          </div>
+          <div class="menu">
+              <a href="formulario.html" class="d-block p-3 text-light"><i class="icon ion-md-clipboard me-2 lead"></i>Registrar Paciente</a>
+              <a href="filtro.html" class="d-block p-3 text-light"><i class="icon ion-md-browsers me-2 lead"></i>Filtro</a>
+
+              <div class="align-items-center">
+                <a href="login.html" class="btn btn-block text-light close">Cerrar Sesion</a>
+              </div>
+              
+          </div>
+      </div>
+
+        <!--Navbar-->
+        <div class="w-100">
+          <nav class="navbar navbar-expand-lg bg-light">
+              <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <form class="d-flex position-relative d-inline-block" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Buscar Paciente" aria-label="Search" id="busqpam">
+                  <!--<button class="btn btn-search position-absolute" type="submit"> -->
+                    <a href="#" class="btn btn-block login-account text-light" id="busqueda"></a>
+                    <i class="icon ion-md-search"></i></button>
+                </form>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-1">
+
+                    <!--Dropdown but dosent look good-->
+
+                    <!--
+                    <li class="nav-item dropdown ms-3">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Diego Chuc
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Configuracion</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="login.html">Cerrar Sesion</a></li>
+                      </ul>
+                    </li>
+                  -->
+                  </ul>
+                </div>
+              </div>
+            </nav>
+
+              <div id="content">
+                     <section>
+                        <div class="container">
+                          <div class="row">
+                            <div class="col">
+                              <h1 class="font-weight-bold mb-0">Bienvenido</h1>
+                              <p class="lead text-muted">Revisa la informacion</p>
+                            </div>
+                          </div>
+                        </div>
+                     </section>
+
+                     <!--Busqueda del paciente-->
+
+                    
+                     <div class="container">
+                      <div class="row">
+                        <!--
+                        <div class="col">
+                          <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                              Pruebas
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">Prueba de reloj</a></li>
+                              <li><a class="dropdown-item" href="#">MMSE</a></li>
+                              <li><a class="dropdown-item" href="#">KATZ</a></li>
+                            </ul>
+                          </div>
+                          <div>
+                            <canvas id="myChart"></canvas>
+                          </div>
+                        </div>
+
+                        -->
+
+                        <div class="grid" style="row-gap: 0;"></div>
+                        <!--Card-->
+                        <div class="col">
+                          <div class="card" style="width:350px">
+                            <img class="card-img-top imagesize" src="Assets/userimage.png" alt="Card image">
+                            <div class="card-body">
+                              <h4 class="card-title">Ignacio Garcia Fernandez</h4>
+                              <p class="card-text">ID: 1022 
+                                <br>Fecha de nacimiento: 1956-07-23
+                                <br> Edad: 66 años
+                                <br> Peso: 67.5
+                                <br> Altura: 1.8
+                                <br> Parroquia: Parroquia San Juan Bosco 
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="container">
+                        <div class="row">
+                          <div class="col">
+                            <div>
+                              <canvas id="myChart"></canvas>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      
+
+                     </div>
+
+                     <!--
+                     <section class="me-2">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th scope="col">Fecha</th>
+                            <th scope="col">Prueba de Reloj</th>
+                            <th scope="col">MMSE</th>
+                            <th scope="col">KATZ</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <th scope="row">Octubre-10 </th>
+                            <td>10</td>
+                            <td>23</td>
+                            <td>15</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Junio-25</th>
+                            <td>14</td>
+                            <td>50</td>
+                            <td>30</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">Marzo-28</th>
+                            <td>15</td>
+                            <td>8</td>
+                            <td>32</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                     </section>
+                     -->
+
+              </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <!--Grafica-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      const labels = [
+        'KATZZ',
+        'Reloj',
+        'SARC-F',
+        'LANTON',
+        'GIJON',
+      ];
+
+      const data = {
+        labels: labels,
+        datasets: [{
+        label: 'Resultados de pruebas',
+        data: [6, 3, 14, 7, 23],
+        backgroundColor: [
+            'rgba(1, 255, 100, 0.9)',
+            'rgba(255, 50, 0, 0.9)',
+            'rgba(0, 255, 100, 0.9)',
+            'rgba(255, 255, 120, 1)',
+            'rgba(0, 255, 100, 0.9)',
+          ],
+          borderColor: [
+            'rgb(255, 99, 132)',
+            'rgb(255, 159, 64)',
+            'rgb(255, 205, 86)',
+            'rgb(75, 192, 192)',
+            'rgb(54, 162, 235)',
+          ],
+          borderWidth: 1
+        }]
+      };
+      const config = {
+        type: 'bar',
+        data: data,
+        options: {}
+      };
+    </script>
+    <script>
+      const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+      );
+    </script>
+    
+  </body>
+</html>
